@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>com.chuwill.nba.plugin.id</id>
+  <name>nbanew</name>
+  <version>1.2</version>
+  <vendor email="952698119@qq.com" url="http://www.yourcompany.cn">willbest</vendor>
+
+  <description><![CDATA[
+      use for get nba live data.<br>
+      <em>most HTML tmay be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      add data panel.<br>
+      <em>most H may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <toolWindow id="NBA" anchor="right" factoryClass="com.chuwill.nba.NbaToolWinFac" />
+<!--    <toolWindow factoryClass="com.chuwill.tounchfish.ToolWindowCreater" id="NBA2" anchor="right" />-->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
